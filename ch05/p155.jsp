@@ -10,8 +10,7 @@
 		String headerName = (String)en.nextElement();
 		String headerValue = request.getHeader(headerName);
 %>	
-<%=headerName%> : <%=headerValue%><br>
-<%	
+<% out.println(headerName + " : " + headerValue + "</br>");
 	}
 %>
 </body>
